@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechWave Podcast</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-[#0e0624] text-white font-sans">
+    <!-- ================= NAVBAR ================= -->
+    <header
+      class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between"
+    >
+      <h1 class="text-2xl font-bold">
+        Tech<span class="text-pink-500">Wave</span>
+      </h1>
+
+      <ul class="hidden md:flex gap-10 text-gray-300">
+        <li class="hover:text-white">About</li>
+        <li class="hover:text-white">Episodes</li>
+        <li class="hover:text-white">Host</li>
+      </ul>
+
+      <button
+        class="bg-gradient-to-r from-pink-500 to-yellow-400 px-6 py-2 rounded-full text-sm hover:scale-105 transition"
+      >
+        Subscribe →
+      </button>
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section
+      class="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0e0624]"
+    >
+      <!-- Wave Background -->
+      <img
+        src="assets/hero-bg.png"
+        class="absolute inset-0 w-full h-full object-cover opacity-80"
+        alt="wave background"
+      />
+
+      <!-- Center Content -->
+      <div class="relative z-10 text-center px-4">
+        <!-- Podcast Circle -->
+        <div
+          class="relative mx-auto w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 flex items-center justify-center"
+        >
+          <!-- Gradient Circle -->
+          <img
+            src="assets/hero-circle.png"
+            class="absolute inset-0 w-full h-full"
+            alt="circle"
+          />
+
+          <!-- NEW Badge -->
+          <span
+            class="absolute -top-2 right-2 bg-green-400 text-black text-xs px-3 py-1 rounded-full"
+          >
+            NEW
+          </span>
+
+          <!-- Microphone -->
+          <img
+            src="assets/microphone.png"
+            class="relative w-12 md:w-14 lg:w-16"
+            alt="microphone"
+          />
+        </div>
+
+        <!-- Title -->
+        <h1 class="mt-8 text-4xl md:text-5xl font-bold">TechWave</h1>
+
+        <!-- Subtitle -->
+        <p class="mt-3 text-gray-300 max-w-xl mx-auto text-sm md:text-base">
+          Your daily dose of tech insights, productivity hacks, and personal
+          growth
+        </p>
+
+        <!-- Buttons -->
+        <div class="mt-6 flex flex-col sm:flex-row justify-center gap-4">
+          <button
+            class="bg-gradient-to-r from-pink-500 to-yellow-400 px-6 py-3 rounded-full text-sm hover:scale-105 transition"
+          >
+            Listen On Spotify
+          </button>
+          <button
+            class="border border-green-400 text-green-400 px-6 py-3 rounded-full text-sm hover:bg-green-400 hover:text-black transition"
+          >
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="py-20 text-center max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl font-bold mb-4">About The Podcast</h2>
+      <p class="text-gray-400 text-sm leading-relaxed">
+        TechWave is your go-to podcast for staying ahead in the fast-paced world
+        of technology. We break down complex topics into digestible insights and
+        share stories of personal growth from industry leaders.
+      </p>
+    </section>
+
+    <!-- ================= STATS ================= -->
+    <section
+      class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center py-10 max-w-6xl mx-auto"
+    >
+      <div>
+        <h3 class="text-green-400 text-2xl font-bold">150K+</h3>
+        <p class="text-xs text-gray-400">MONTHLY LISTENERS</p>
+      </div>
+      <div>
+        <h3 class="text-green-400 text-2xl font-bold">200+</h3>
+        <p class="text-xs text-gray-400">EPISODES PUBLISHED</p>
+      </div>
+      <div>
+        <h3 class="text-green-400 text-2xl font-bold">4.9★</h3>
+        <p class="text-xs text-gray-400">AVERAGE RATING</p>
+      </div>
+      <div>
+        <h3 class="text-green-400 text-2xl font-bold">50+</h3>
+        <p class="text-xs text-gray-400">INDUSTRY EXPERTS</p>
+      </div>
+    </section>
+
+
+    <!-- ================= WHY CHOOSE TECHWAVE ================= -->
+    <section class="py-20 bg-[#0e0624]">
+      <div class="max-w-6xl mx-auto px-6">
+        <!-- Title -->
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-12">
+          Why Choose TechWave
+        </h2>
+
+        <!-- Grid Wrapper -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <!-- LEFT BIG CARD -->
+          <div
+            class="bg-[#1a0f3d] rounded-2xl p-8 lg:row-span-2 hover:shadow-[0_0_40px_rgba(168,85,247,0.25)] transition"
+          >
+            <div class="text-3xl mb-4">🎧</div>
+            <h3 class="font-semibold mb-3">Premium Audio Quality</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">
+              Experience crystal-clear sound with professional grade recording
+              equipment and expert audio engineering. Every episode is mastered
+              for optimal listening across all devices and platforms.
+            </p>
+          </div>
+
+          <!-- RIGHT TOP CARD -->
+          <div
+            class="bg-[#1a0f3d] rounded-2xl p-6 hover:shadow-[0_0_40px_rgba(168,85,247,0.25)] transition"
+          >
+            <div class="text-2xl mb-3">📱</div>
+            <h3 class="font-semibold mb-2">Mobile Friendly</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">
+              Listen on the go with seamless mobile experience and offline
+              downloads.
+            </p>
+          </div>
+
+          <!-- RIGHT BOTTOM CARD -->
+          <div
+            class="bg-[#1a0f3d] rounded-2xl p-6 hover:shadow-[0_0_40px_rgba(168,85,247,0.25)] transition"
+          >
+            <div class="text-2xl mb-3">🌍</div>
+            <h3 class="font-semibold mb-2">Global Community</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">
+              Connect with tech enthusiasts from over 120 countries worldwide.
+            </p>
+          </div>
+
+          <!-- BOTTOM LEFT CARD -->
+          <div
+            class="bg-[#1a0f3d] rounded-2xl p-6 lg:col-span-2 hover:shadow-[0_0_40px_rgba(168,85,247,0.25)] transition"
+          >
+            <div class="text-2xl mb-3">⚡</div>
+            <h3 class="font-semibold mb-2">Exclusive Interviews</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">
+              Get unprecedented access to industry titans, startup founders, and
+              tech visionaries. Our host dives deep into real-world journeys,
+              failures, and success strategies.
+            </p>
+          </div>
+
+          <!-- BOTTOM RIGHT CARD -->
+          <div
+            class="bg-[#1a0f3d] rounded-2xl p-6 hover:shadow-[0_0_40px_rgba(168,85,247,0.25)] transition"
+          >
+            <div class="text-2xl mb-3">📘</div>
+            <h3 class="font-semibold mb-2">Rich Resources</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">
+              Access show notes, transcripts, and additional learning materials
+              for every episode.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- ================= FEATURED EPISODES ================= -->
+    <section class="py-20 bg-[#0e0624]">
+      <div class="max-w-6xl mx-auto px-6">
+        <!-- Title -->
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-12">
+          Featured Episodes
+        </h2>
+
+        <!-- Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <div
+            class="bg-[#1a0f3d] rounded-2xl overflow-hidden hover:shadow-[0_0_40px_rgba(168,85,247,0.25)] transition"
+          >
+            <!-- Image -->
+            <div class="relative">
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/HbVdR8kq5Ps?si=yhb2eaFBcFMij7XW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div
+                  class="w-12 h-12 rounded-full bg-pink-500 flex items-center justify-center"
+                >
+                  <img src="assets/youtube.png" alt="">
+                </div>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="p-5">
+              <h3 class="font-semibold mb-2">
+                The Future of AI in Everyday Life
+              </h3>
+              <p class="text-sm text-gray-400 mb-4">
+                Exploring how artificial intelligence is transforming our daily
+                routines and what to expect in the next decade.
+              </p>
+
+              <!-- Duration -->
+              <div class="flex items-center gap-2 text-green-400 text-sm">
+               <span ><img src="assets/clock.png" alt=""></span>
+                <span>42 min</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-[#1a0f3d] rounded-2xl overflow-hidden hover:shadow-[0_0_40px_rgba(168,85,247,0.25)] transition"
+          >
+            <div class="relative">
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/brtZuKweDYE?si=CCdTRGvemul3PHGF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div
+                  class="w-12 h-12 rounded-full bg-pink-500 flex items-center justify-center"
+                >
+                 <img src="assets/youtube.png" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="p-5">
+              <h3 class="font-semibold mb-2">
+                Building Better Habits for Remote Work
+              </h3>
+              <p class="text-sm text-gray-400 mb-4">
+                Practical strategies for staying productive and maintaining
+                work-life balance in a remote environment.
+              </p>
+
+              <div class="flex items-center gap-2 text-green-400 text-sm">
+                <span ><img src="assets/clock.png" alt=""></span>
+                <span>35 min</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="bg-[#1a0f3d] rounded-2xl overflow-hidden hover:shadow-[0_0_40px_rgba(168,85,247,0.25)] transition"
+          >
+            <div class="relative">
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/YKK5O2wOSeQ?si=QAEpa8wbsNae90Go" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div
+                  class="w-12 h-12 rounded-full bg-pink-500 flex items-center justify-center"
+                >
+                  <img src="assets/youtube.png" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="p-5">
+              <h3 class="font-semibold mb-2">
+                Career Growth in Tech: A Roadmap
+              </h3>
+              <p class="text-sm text-gray-400 mb-4">
+                Expert advice on navigating your tech career from junior
+                developer to senior leadership roles.
+              </p>
+
+              <div class="flex items-center gap-2 text-green-400 text-sm">
+                <span ><img src="assets/clock.png" alt=""></span>
+                <span>51 min</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HOST ================= -->
+    <section class="py-20 max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl font-bold text-center mb-10">Meet The Host</h2>
+
+      <div
+        class="bg-[#1a0f3d] p-6 rounded-xl flex flex-col md:flex-row items-center gap-6"
+      >
+        <div
+          class="w-35 h-35 rounded-full  from-pink-500 to-yellow-400 flex items-center justify-center"
+        >
+          <img src="assets/host.png" alt="" />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">Alex Kumar</h3>
+          <p class="text-sm text-gray-400 mt-2">
+            Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.
+          </p>
+          <div class="mt-5 ">
+            <ul class="flex gap-3.">
+              <li class="rounded-full px-2" ><img class="px-2 border-2 border-[#533C72] rounded-full" src="assets/linkedin.png" alt=""></li>
+              <li class="rounded-full px-2"><img class="px-2 border-2 border-[#533C72] rounded-full" src="assets/x.png" alt=""></li>
+              <li class="rounded-full px-2"><img class="px-2 border-2 border-[#533C72] rounded-full" src="assets/instagram.png" alt=""></li>
+              <li class="rounded-full px-2"><img class="px-2 border-2 border-[#533C72] rounded-full" src="assets/youtube.png" alt=""></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="relative bg-[#0e0624] overflow-hidden">
+      <!-- Wave Background (CENTERED) -->
+      <img
+        src="assets/footer-bg.png"
+        alt="wave background"
+        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-none object-cover opacity-40 pointer-events-none"
+      />
+
+      <!-- Content -->
+      <div class="relative z-10 max-w-6xl mx-auto px-6 py-20 text-center">
+        <!-- Brand -->
+        <h2 class="text-4xl font-bold mb-6">
+          Tech<span class="text-pink-500">Wave</span>
+        </h2>
+
+        <!-- Platforms (MID AREA) -->
+        <div
+          class="flex flex-wrap justify-center gap-6 text-gray-300 text-sm mb-6">
+        
+          <div class="flex gap-2">
+            <img src="assets/spotify.png" alt="">
+            <span class="hover:text-white cursor-pointer">Spotify</span>
+          </div>
+          <div class="flex gap-2">
+            <img src="assets/apple-podcast.png" alt="">
+            <span class="hover:text-white cursor-pointer">Apple Podcasts</span>
+          </div>
+          <div class="flex gap-2">
+            <img src="assets/youtube-podcast.png" alt="">
+            <span class="hover:text-white cursor-pointer">YouTube</span>
+          </div>
+          <div class="flex gap-2">
+            <img src="assets/twitter.png" alt="">
+            <span class="hover:text-white cursor-pointer">Twitter</span>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <p class="text-xs text-gray-400">
+          © 2026 TechWave Podcast. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
